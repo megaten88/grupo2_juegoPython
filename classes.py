@@ -26,9 +26,20 @@ class Protagonist(Character):
 class Villain(Character):
     pass
 
+class Planet:
+    def __init__(self, name, category, villain):
+        self.name = name
+        self.category = category
+        self.villain = villain
+    def __str__(self):
+        return "Nombre:{}\n Categoria:{}".format(self.name, self.category)
+
+
+
 personaje = Protagonist("Mayra",1,1)
 print(personaje)
 print()
 
 personaje + 80
 print(personaje)
+
