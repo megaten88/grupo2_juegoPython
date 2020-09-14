@@ -34,12 +34,29 @@ class Planet:
     def __str__(self):
         return "Nombre:{}\n Categoria:{}".format(self.name, self.category)
 
+categorias = ["Cultura General", "Música", "Lenguajes"] 
+
+def lectura():
+    nueva_pregunta = Question(0,"Como estás?", 20)
+    pass
+
+class Question:
+    def __init__(self, numCategory, question, exp):
+        self.category = numCategory
+        self.question = question
+        self.exp = exp
+    
+
+question1 = Question(0,"¿Donde quedá Japón?",20)
+
+preguntas = [question1]
 
 
 personaje = Protagonist("Mayra",1,1)
 print(personaje)
 print()
 
-personaje + 80
+personaje + question1.exp
+
 print(personaje)
 
