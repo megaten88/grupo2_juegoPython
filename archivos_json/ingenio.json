@@ -30,7 +30,7 @@
       "exp": 10
     },
     "6":{
-      "pregunta": "¿Qué es lo que se pone sobre la mesa, se corta y no se come",
+      "pregunta": "¿Qué es lo que se pone sobre la mesa, se corta y no se come?",
       "respuesta": ["la baraja","una baraja","baraja","baraja de naipes","una baraja de naipes"],
       "pista": "¿Podríamos jugar también? O tal vez no sea tiempo...",
       "exp": 10

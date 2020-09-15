@@ -25,13 +25,13 @@
     },
     "5":{
       "pregunta": "Ordena las palabras, y luego escribe de respuesta la que no corresponde al grupo: preda - darme - obaelu - linovi",
-      "respuesta": "violin",
+      "respuesta": ["violin","violín"],
       "pista": "Hay algo que en definitiva no pertenece a esa familia.",
       "exp": 10
     },
     "6":{
       "pregunta": "¿Qué palabra no corresponde al grupo?: diente - niveo - tomboctú - milán - águila",
-      "respuesta": "aguila",
+      "respuesta": ["aguila","águila"],
       "pista": "¿te sabes el alfabeto de memoria? Creo que te podría ser muy útil en este momento.",
       "exp": 10
     },

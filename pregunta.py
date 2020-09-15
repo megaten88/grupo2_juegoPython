@@ -1,5 +1,6 @@
 import json
 import random
+import ftfy
 
 # categories = ['lenguaje','logica','ciencia','cultura','logica-matematica']
 
@@ -47,7 +48,7 @@ def player_input(question):
     OUTPUT: <type, str>: Respuesta del jugador.
     INPUT: <type, str>: La pregunta que se le hace al jugador.
     """
-    print(question)
+    print(ftfy.fix_text(question.question))
     response = input().lower().strip()
     return(response)
 
