@@ -5,7 +5,7 @@ import sys #nuevo
 import time #nuevo
 
 #Formato de texto
-wrapper = textwrap.TextWrapper(width = 80,replace_whitespace=False)
+wrapper = textwrap.TextWrapper(width = 100,replace_whitespace=False)
 def text_format(message):
             wrapped_text = wrapper.fill(text=message)
     #for index in range(len(wrapped_text)):
@@ -109,6 +109,7 @@ def game():
         - Core: Pues respondiendo de forma correcta una serie de preguntas que nos harán debemos tener mucho cuidado pues si fallamos mas de 3 veces seremos descubiertos y exiliados del planeta.\n
         - Core: Yo confió plenamente en tus habilidades, pero si te sientes en demasiados problemas puedo ayudarte recuerda que somos compañeros, ante todo.\n
         - Core: Cada planeta nos dará por su nombre la pista de que tipo de trivia o acertijo podremos encontrar en el, así que adelante y comencemos con el planeta del Lenguaje…\n
+
             """))
 
  # Aquí empieza la dinámica para todos los planetas
@@ -118,6 +119,7 @@ def game():
         - {villain.name}: Un terrícola y un bandido en el planeta del lenguaje, desde que entraron sabia que venían a por mi objeto.
         - {villain.name}: al haber derrocado nuestros sellos han demostrado astucia, y valor.
         - {villain.name}: Ahora, enfrentad con dignidad, y si sois merecedores lleváis el objeto con vosotros.
+
             """))
     questions =  createQuestions('lenguaje')
     for question in questions:
@@ -129,11 +131,15 @@ def game():
                 tries+=1
             if(tries == protagonist.tryNumber-1):
                  text_format(textwrap.dedent(f"""\
+
                     - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
+
                 """))
             if(tries > protagonist.tryNumber):
                 text_format(textwrap.dedent(f"""\
+
                     - Core: SE TERMINÓ EL JUEGO :(
+
                 """))
                 return
     text_format(textwrap.dedent(f"""\
@@ -141,6 +147,8 @@ def game():
 
         RESUMEN DEL PROTAGONISTA:
         {protagonist}
+
+
 
             """))
     questions = []
@@ -193,6 +201,8 @@ def game():
     #AQUÍ COMIENZA EL TERCER PLANETA
     planet,villain = createPlanet("Planeta Ciencia", "ciencia", "Dernas")
     text_format(textwrap.dedent(f"""\
+
+
         *************LLEGANDO A {planet.name}
         - Core: ¡Wow! Mira {protagonist.name}, este es mi planeta favorito, donde ser un explorador no es...
         - Core: sinónimo de bandido, dudar es siempre la primera opción y equivocarse es solo el motivo para volverlo a intentar.
@@ -202,6 +212,7 @@ def game():
         - {villain.name}: El llegar hasta esta etapa merece un reconocimiento, no cualquiera rompe nuestros sellos.
         - {villain.name}: Y para este momento ya han observado, analizado y experimentado, así que, es momento de la conclusión.
         - {villain.name}: Una prueba final que les permitirá obtener el resultado: el objeto especial que tanto buscan.
+
 
             """))
     questions =  createQuestions('ciencia')
@@ -234,6 +245,8 @@ def game():
 #AQUÍ COMIENZA EL CUARTO PLANETA
     planet,villain = createPlanet("Planeta Cultura General", "cultura", "Soldish")
     text_format(textwrap.dedent(f"""\
+
+
         *************LLEGANDO A {planet.name}
         - Core: el ser un explorador me ha enseñado tantas cosas, 
         - Core: he aprendido lo importante que es la función de todos en el universo, ningún conocimiento vale menos que el de otros, y que todos tenemos algo que entregar.
@@ -245,6 +258,8 @@ def game():
         - {villain.name}: impresionante, lograron romper los sellos
         - {villain.name}: Pero eso no basta para obtener mi objeto especial, así que, llego la hora de la prueba final,
         - {villain.name}: ¿que tanto saben acerca de todo lo que se puede saber? 
+
+
 
             """))
     questions =  createQuestions('cultura')
@@ -277,6 +292,8 @@ def game():
 #AQUÍ COMIENZA EL QUINTO PLANETA
     planet,villain = createPlanet("Planeta Logico-Matematico", "logico-matematico", "Minus")
     text_format(textwrap.dedent(f"""\
+
+        
         *************LLEGANDO A {planet.name}
         - Core: Desde que Minus el guardián del objeto de este planeta se ha plantado aquí, ya nada es igual.
         - Core: Sus habitantes no son felices. 
@@ -287,6 +304,7 @@ def game():
         - {villain.name}: ¡Por fin! el ultimo de los foody´s y el terrícola que tuvo que conseguir, es una lastima que estuvieras en exploración justo en el momento que decidí absorber y colisionar todo tu planeta, no estaríamos en esta situación… 
         - {villain.name}: El hecho que ustedes dos pudieran superar los demás planetas, obtener los objetos y romper mis sellos no les asegura nada, no será para nada sencillo.
         - {villain.name}: Prepárense para la prueba final…
+        
 
             """))
     questions =  createQuestions('logico-matematico')
