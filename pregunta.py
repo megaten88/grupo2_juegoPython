@@ -2,6 +2,17 @@ import json
 import random
 
 categories = ['lenguaje','logica','ciencia','cultura','logica-matematica']
+questions = []
+
+class Question:
+    def __init__(self,question, answer, hint, exp):
+        self.question = question
+        self.answer = answer
+        self.hint = hint
+        self.exp = exp
+
+    def __str__(self):
+        return f"{self.question}"
 
 def fetch_data(category):
     """
@@ -14,10 +25,23 @@ def fetch_data(category):
         #category_data = dict(random.sample(category_data.items(),2)) #para dar aleatoriedad
         return(category_data)
 
-#x = fetch_data('cultura')
-#print(x)
+# x = fetch_data('cultura')
+# print(type(x))
+# print(x)
 #for key in list(x): #list(x) en lugar de x para evitar:RuntimeError: dictionary changed size during iteration
 #    print(x.pop(key))
+def createQuestions(category):
+    category_data = fetch_data(category)
+    for key in category_data.keys():
+        question = category_data[key]['pregunta']
+        answer  = category_data[key]['respuesta']
+        hint  = category_data[key]['pista']
+        exp = category_data[key]['exp']
+        newQuestion = Question(question,answer,hint,exp)
+        questions.append(newQuestion)
+    pass
+
+createQuestions('cultura')
 
 def player_input(question):
     """
@@ -43,11 +67,13 @@ def answer_check(question_data, protagonist):
     else:
         print("No te rindas! Intenta de nuevo!")
 
-class Question:
-    def __init__(self,question, answer, hint, exp):
-        self.question = question
-        self.answer = answer
-        self.hint = hint
-        self.exp = exp
+createQuestions('cultura')
+createQuestions('lenguaje')
 
-#question1 = Question()
+# player_input(questions[0])
+
+# createQuestions('ciencia')
+# createQuestions('logica')
+# createQuestions('logica-matematica')
+
+
