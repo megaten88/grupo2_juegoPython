@@ -60,7 +60,7 @@ def answer_check(question_data, protagonist):
     """
     answer = question_data.answer
     response = player_input(question_data)
-    if response == answer:
+    if response in answer:
         print("Has acertado!")
         protagonist + question_data.exp
         return True
