@@ -2,8 +2,12 @@ Proyecto # 2
 
 Integrantes:
 
-Allan 
-Maria Fernanda
+Allan Alonzo
+
+Fernanda Medina
+
 Bessy Padilla
+
 Mayra Salazar
+
 Pamela Salazar
