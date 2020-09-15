@@ -43,7 +43,7 @@
     },
     "8":{
       "pregunta": "¿Quién es el padre del psicoanálisis?",
-      "respuesta": ["freud","sigmund freud"]
+      "respuesta": ["freud","sigmund freud"],
       "pista": "Médico neurólogo austríaco de origen judío.",
       "exp": 10
     },
