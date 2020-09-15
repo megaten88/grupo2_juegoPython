@@ -2,61 +2,61 @@
     "1":{
       "pregunta": "¿Quién era el dios romano de la guerra?",
       "respuesta": "marte",
-      "pista": None,
+      "pista": "Se le representaba como a un guerrero con armadura y con un yelmo encrestado.",
       "exp": 10
     },
     "2":{
       "pregunta": "¿Manuscrito cuya escritura ha sido eliminada con objeto de escribir otro texto encima?",
       "respuesta": "palimpsesto",
-      "pista": None,
+      "pista": "El primer de este tipo fue un manuscrito de la Biblia griega (conocido).",
       "exp": 50
     },
     "3":{
       "pregunta": "¿Cuántas sílabas forman un haiku?",
       "respuesta": ["17","diecisiete"],
-      "pista": None,
+      "pista": "Haiku es un género poético de origen japonés.",
       "exp": 10
     },
     "4":{
       "pregunta": "¿Quién escribió <<La Odisea>>?",
       "respuesta": "homero",
-      "pista": None,
+      "pista": "También escribió la Ilíada.",
       "exp": 10
     },
     "5":{
-      "pregunta": "¿De donde se originan los juegos olímpicos?",
-      "respuesta": ["olimpia","grecia","olimpia, grecia", "olympia"],
-      "pista": None,
+      "pregunta": "¿En donde se originan los juegos olímpicos?",
+      "respuesta": "grecia",
+      "pista": "País en la península balcánica.",
       "exp": 10
     },
     "6":{
       "pregunta": "¿Cuando acabó la II Guerra Mundial?",
       "respuesta": "1945",
-      "pista": None,
+      "pista": "Es una fecha en la decada de los años 40.",
       "exp": 10
     },
     "7":{
       "pregunta": "¿En qué año llegó Cristóbal a América?",
       "respuesta": "1492",
-      "pista": None,
+      "pista": "Marca el fin de la Edad Media y el comienzo de la Edad Moderna.",
       "exp": 10
     },
     "8":{
       "pregunta": "¿Quién es el padre del psicoanálisis?",
       "respuesta": ["freud","sigmund freud"]
-      "pista": None,
+      "pista": "Médico neurólogo austríaco de origen judío.",
       "exp": 10
     },
     "9":{
       "pregunta": "¿Cuál es la única ciudad que está en dos continentes distintos?",
       "respuesta": "estambul",
-      "pista": None,
+      "pista": "Ciudad en Turquía.",
       "exp": 30
     },
     "10":{
       "pregunta": "¿Quién fue el primer emperador romano?",
       "respuesta": ["augusto","cesar augusto","césar augusto"],
-      "pista": None,
+      "pista": "Fue el emperador romano con el reino más prolongado de la historia.",
       "exp": 30
     }
 }
