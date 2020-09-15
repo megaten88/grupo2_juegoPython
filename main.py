@@ -11,14 +11,14 @@ def printInit():
     #######################################
              Space Trivia
    ,-"     "-.
-            / o       o \j\
-           /   \     /   \\
-          /     )-"-(     \\
-         /     ( 6 6 )     \\
-        /       \ " /       \\
-       /         )=(         \\
-      /   o   .--"-"--.   o   \\
-     /    I  /  -   -  \  I    \\
+            / o       o \j
+           /   \     /   \j
+          /     )-"-(     \j
+         /     ( 6 6 )     \j
+        /       \ " /       \j
+       /         )=(         \j
+      /   o   .--"-"--.   o   \j
+     /    I  /  -   -  \  I    \j
  .--(    (_}y/\       /\y{_)    )--.
 (    ".___l\/__\_____/__\/l___,"    )
  \                                 /
@@ -104,9 +104,7 @@ def game():
         - {villain.name}: al haber derrocado nuestros sellos han demostrado astucia, y valor. 
         - {villain.name}: Ahora, enfrentad con dignidad, y si sois merecedores lleváis el objeto con vosotros. 
             """))
-    createQuestions('lenguaje') 
-    print(questions)
-
+    questions =  createQuestions('lenguaje')
     for question in questions:
         correct = None
         tries=0
@@ -129,7 +127,9 @@ def game():
         RESUMEN DEL PROTAGONISTA:
         {protagonist}
 
-            """))            
+            """))
+    questions = []
+    
 # FIN DEL PRIMER PLANETA
 
           

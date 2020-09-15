@@ -2,7 +2,6 @@ import json
 import random
 
 # categories = ['lenguaje','logica','ciencia','cultura','logica-matematica']
-questions = []
 
 class Question:
     def __init__(self,question, answer, hint, exp):
@@ -31,6 +30,7 @@ def fetch_data(category):
 #for key in list(x): #list(x) en lugar de x para evitar:RuntimeError: dictionary changed size during iteration
 #    print(x.pop(key))
 def createQuestions(category):
+    questions = []
     category_data = fetch_data(category)
     for key in category_data.keys():
         question = category_data[key]['pregunta']
@@ -39,10 +39,7 @@ def createQuestions(category):
         exp = category_data[key]['exp']
         newQuestion = Question(question,answer,hint,exp)
         questions.append(newQuestion)
-
-def clearQuestions():
-    global questions
-    questions = []
+    return questions
 
 def player_input(question):
     """
