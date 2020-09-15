@@ -1,12 +1,29 @@
 from  pregunta import *
 from  classes import *
 import textwrap
+import sys #nuevo
+import time #nuevo
+
+#Formato de texto
+wrapper = textwrap.TextWrapper(width = 80)
+def text_format(message):
+            wrapped_text = wrapper.fill(text=message)
+    #for index in range(len(wrapped_text)):
+    #    for elem in wrapped_text[index]:
+            for character in wrapped_text: #nuevo
+                sys.stdout.write(character) #nuevo
+                sys.stdout.flush() #nuevo
+                time.sleep(0.06) #nuevo
+            print("")
+
+
 
 """
     Esta parte es donde definimos lo que usaremos en el juego.
 """
 
 def printInit():
+    print('\n'*3) #nuevo
     print (textwrap.dedent("""\
     #######################################
              Space Trivia
@@ -68,10 +85,8 @@ def createPlanet(name, category, villainName):
 
 
 def game():
-    print(textwrap.dedent("""\
-    … Si estas leyendo este mensaje debes ser el terrícola que he buscado durante tanto tiempo.
-    Dime, ¿Cuál es tu nombre?\n
-        """))
+    message = "Si estás leyendo este mensaje debes ser el terrícola que he buscado durante tanto tiempo. Dime, ¿Cuál es tu nombre?"
+    text_format(message)
 
     name = input("Ingresa el nombre del personaje: ")
     protagonist = Protagonist(name,1,1)
