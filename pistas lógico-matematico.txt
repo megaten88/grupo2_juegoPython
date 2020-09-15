@@ -1,0 +1,25 @@
+---pistas lógico-matematico---
+
+1)Divide 50/100 y el resultado  se multiplica por 90
+
+2) Nótese que se muestran nombres de felinos y en la lista hay un canino
+
+3) Invierta los dos primeros números así como sucedió con las letras 
+
+4)El resultado es la multiplicación de 3 números , noté en el enunciado cuáles son
+
+5)El primer número aumenta en de dos en dos ,la letra va en orden contrario del abecedario y el último número es el siguiente impar
+
+
+6)Es una pregunta con "trampa" noté exactamente de 6-7 ¿Qué es lo que pasa?
+
+
+7)¿Que puesto adelanta? Tome en cuenta eso 
+
+8)Cada persona participa en 49 saludos (uno mismo no se saluda) busque el número por el se  multiplica el 49 y el resultado se divide entre 2 el resultado es mayor que 1,000 y menor que 1,500
+
+
+9)¿Cuál es la mitad de 4,000? que es el precio de los bolígrafos si 4,000 es el 100% del gasto de la compra de los bolígrafos ,la ganancia es?
+
+
+10) Busque los operadores de manera que su resulta sea 39
