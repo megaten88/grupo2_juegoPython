@@ -22,7 +22,7 @@ def fetch_data(category):
     """
     with open ('archivos_json/' + category + '.json') as file:
         category_data = json.load(file)
-        category_data = dict(random.sample(category_data.items(),2)) #para dar aleatoriedad
+        category_data = dict(random.sample(category_data.items(),4)) #para dar aleatoriedad
         return(category_data)
 
 # x = fetch_data('cultura')
