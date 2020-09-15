@@ -7,13 +7,13 @@
     },
     "2":{
       "pregunta": "¿Qué flor tiene en su nombre 5 vocales?",
-      "respuesta": ["orquidea","orquídea"],
+      "respuesta": "orquidea",
       "pista": "Me parece que termina en la primera vocal.",
       "exp": 10
     },
     "3":{
       "pregunta": "¿Qué animal en su nombre lleva las 5 vocales?",
-      "respuesta": ["murcielago","murciélago"],
+      "respuesta": "murcielago",
       "pista": "Me parece que es un mamífero.",
       "exp": 10
     },
@@ -24,14 +24,14 @@
       "exp": 10
     },
     "5":{
-      "pregunta": "Ordena las palabras, y luego escribe de respuesta la que no corresponde al grupo: preda - darme - obaelu - línovi",
-      "respuesta": ["violin","violín"],
+      "pregunta": "Ordena las palabras, y luego escribe de respuesta la que no corresponde al grupo: preda - darme - obaelu - linovi",
+      "respuesta": "violin",
       "pista": "Hay algo que en definitiva no pertenece a esa familia.",
       "exp": 10
     },
     "6":{
       "pregunta": "¿Qué palabra no corresponde al grupo?: diente - niveo - tomboctú - milán - águila",
-      "respuesta": ["aguila","águila"],
+      "respuesta": "aguila",
       "pista": "¿te sabes el alfabeto de memoria? Creo que te podría ser muy útil en este momento.",
       "exp": 10
     },

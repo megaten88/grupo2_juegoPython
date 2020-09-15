@@ -129,8 +129,51 @@ def game():
 
             """))
     questions = []
-    
-# FIN DEL PRIMER PLANETA
+    # FIN DEL PRIMER PLANETA
+
+     # Aquí empieza el segundo planeta 
+
+    planet,villain = createPlanet("Planeta Ingenio", "ingenio", "Sora")
+    print(textwrap.dedent(f"""\
+        *************LLEGANDO A {planet.name}
+        - Arita: Veo que lo has logrado Core, encontrar al terrícola no era una tarea fácil. 
+        - Arita: Y mucho menos al indicado, tu fascinación por la exploración y el espacio; te ha traído muchos beneficios… 
+        - Arita: y sobre todo una gran responsabilidad.
+        - Arita: Ser parte de este universo hasta el final de sus tiempos es tu destino como tu elección.
+
+        - Arita: {protagonist.name} confía en el gran corazón e intuición de Core y pide su ayuda cuando mas la necesites. 
+        - Arita: El te ayudara a explorar el poder detrás de los objetos especiales.
+
+        - {villain.name}: haber roto los sellos no te asegura este objeto especial, aun queda una ultima prueba por superar. 
+        - {villain.name}: Lee dos veces antes de contestar o la respuesta incorrecta podrías seleccionar. 
+         
+            """))
+    questions =  createQuestions('ingenio')
+    for question in questions:
+        correct = None
+        tries=0
+        while(correct is None and tries<= protagonist.tryNumber):
+            correct = answer_check(question,protagonist)
+            if(correct is None ):
+                tries+=1
+            if(tries == protagonist.tryNumber-1):
+                 print(textwrap.dedent(f"""\
+                    - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
+                """))
+            if(tries > protagonist.tryNumber):
+                print(textwrap.dedent(f"""\
+                    - Core: SE TERMINÓ EL JUEGO :( 
+                """))
+                return
+    print(textwrap.dedent(f"""\
+        - {villain.name}: Me has vencido, {protagonist.name}.
+
+        RESUMEN DEL PROTAGONISTA:
+        {protagonist}
+
+            """))
+    questions = []
+    # FIN DEL SEGUNDO PLANETA
 
           
 
