@@ -146,7 +146,7 @@ def game():
     questions = []
     # FIN DEL PRIMER PLANETA
 
-     # Aquí empieza el segundo planeta
+# Aquí empieza el segundo planeta
 
     planet,villain = createPlanet("Planeta Ingenio", "ingenio", "Sora")
     text_format(textwrap.dedent(f"""\
@@ -274,7 +274,73 @@ def game():
     questions = []
     # FIN DEL CUARTO PLANETA
 
+#AQUÍ COMIENZA EL QUINTO PLANETA
+    planet,villain = createPlanet("Planeta Logico-Matematico", "logico-matematico", "Minus")
+    text_format(textwrap.dedent(f"""\
+        *************LLEGANDO A {planet.name}
+        - Core: Desde que Minus el guardián del objeto de este planeta se ha plantado aquí, ya nada es igual.
+        - Core: Sus habitantes no son felices. 
+        - Core: Su necesidad de abarcar el poder y conocimiento de los demás dejo desestabilizada esta parte del universo. 
+        - Core: El alguna vez junto los objetos especiales también, pero no pudo usarlos de manera correcta y creo un desequilibro. 
+        - Core: Pero tu {protagonist.name} tienes todo lo que se necesita, y podrás recobrar el equilibrio, se debe sentir muy genial ser tan fundamental ¿no? ¡vamos! Ya solo falta un poco mas amigo.
+        
+        - {villain.name}: ¡Por fin! el ultimo de los foody´s y el terrícola que tuvo que conseguir, es una lastima que estuvieras en exploración justo en el momento que decidí absorber y colisionar todo tu planeta, no estaríamos en esta situación… 
+        - {villain.name}: El hecho que ustedes dos pudieran superar los demás planetas, obtener los objetos y romper mis sellos no les asegura nada, no será para nada sencillo.
+        - {villain.name}: Prepárense para la prueba final…
 
+            """))
+    questions =  createQuestions('logico-matematico')
+    for question in questions:
+        correct = None
+        tries=0
+        while(correct is None and tries<= protagonist.tryNumber):
+            correct = answer_check(question,protagonist)
+            if(correct is None ):
+                tries+=1
+            if(tries == protagonist.tryNumber-1):
+                 text_format(textwrap.dedent(f"""\
+                    - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
+                """))
+            if(tries > protagonist.tryNumber):
+                text_format(textwrap.dedent(f"""\
+                    - Core: SE TERMINÓ EL JUEGO :(
+                """))
+                return
+    text_format(textwrap.dedent(f"""\
+        - {villain.name}: Me has vencido, {protagonist.name}.
+
+        RESUMEN DEL PROTAGONISTA:
+        {protagonist}
+
+            """))
+    questions = []
+    # FIN DEL QUINTO PLANETA
+
+#FIN DEL JUEGO
+    text_format(textwrap.dedent(f"""\
+        
+        ¡Felicidades! Has completado el modo historia del juego. 
+
+         Vemos como se comienzan a formar planetas que no habíamos visto. Una imagen indescriptiblemente hermosa. 
+         Y que, si eran aquellos que habían sido absorbidos por la avaricia de Minus. 
+         El equilibrio estaba de vuelta...
+
+        - Core: ... Amigo, lo hemos logrado. Gracias por traer de vuelta mi planeta y regalarme un hogar eterno, jamás lo olvidare.
+        - Core: Ni tu a mi, por que siempre que veas al hacia el espacio y estés en busca de una nueva aventura ahí estaré yo, apoyándote. 
+        - Core: Hasta siempre.
+
+        Jamás Core se Había visto mas feliz, por fin había encontrado el lugar al que pertenecía y no estaba solo. (Core se desvanece poco a poco en el espacio)
+
+        - Arita: {protagonist.name} Core jamás se sintió parte de su planeta, pero eso no quiere decir que no lo amara, cuando el se entero de la absorción de inmediato fue a mi planeta, y descubrió que la única manera de regresar el equilibrio era juntando de nuevo los objetos especiales. 
+        - Arita: Volver a ese espacio-tiempo. Pero solo un terrícola seria capaz de manejar ese poder, de ayudarlo a completar esa misión, esa obsesión lo llevo hacia ti. 
+        - Arita: El precio era demasiado alto y el lo sabia. Su existencia ya no seria la misma, debería unir su materia y ser al espacio. 
+        - Arita: Fue difícil de aceptar, pero con el tiempo comprendió que ese era su verdadero hogar y el conocerte le dio su verdadera familia.
+        - Arita: Ahora regresaras a tu planeta y encontraras tu verdadera misión como terrícola Tu memoria será borrada el momento antes de leer la carta de Core, pero tus sentimientos quedaran intactos.
+
+        FIN
+
+            """))
+#fIN DEL JUEGO
 
 
 # ------------------------------------------------------------------------------
