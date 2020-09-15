@@ -114,6 +114,10 @@ def game():
             correct = answer_check(question,protagonist)
             if(correct is None ):
                 tries+=1
+            if(tries == protagonist.tryNumber-1):
+                 print(textwrap.dedent(f"""\
+                    - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
+                """))
             if(tries > protagonist.tryNumber):
                 print(textwrap.dedent(f"""\
                     - Core: SE TERMINÓ EL JUEGO :( 
