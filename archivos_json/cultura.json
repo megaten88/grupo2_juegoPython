@@ -1,0 +1,62 @@
+{
+    "1":{
+      "pregunta": "¿Quién era el dios romano de la guerra?",
+      "respuesta": "marte",
+      "pista": None,
+      "exp": 10
+    },
+    "2":{
+      "pregunta": "¿Manuscrito cuya escritura ha sido eliminada con objeto de escribir otro texto encima?",
+      "respuesta": "palimpsesto",
+      "pista": None,
+      "exp": 50
+    },
+    "3":{
+      "pregunta": "¿Cuántas sílabas forman un haiku?",
+      "respuesta": ["17","diecisiete"],
+      "pista": None,
+      "exp": 10
+    },
+    "4":{
+      "pregunta": "¿Quién escribió <<La Odisea>>?",
+      "respuesta": "homero",
+      "pista": None,
+      "exp": 10
+    },
+    "5":{
+      "pregunta": "¿De donde se originan los juegos olímpicos?",
+      "respuesta": ["olimpia","grecia","olimpia, grecia", "olympia"],
+      "pista": None,
+      "exp": 10
+    },
+    "6":{
+      "pregunta": "¿Cuando acabó la II Guerra Mundial?",
+      "respuesta": "1945",
+      "pista": None,
+      "exp": 10
+    },
+    "7":{
+      "pregunta": "¿En qué año llegó Cristóbal a América?",
+      "respuesta": "1492",
+      "pista": None,
+      "exp": 10
+    },
+    "8":{
+      "pregunta": "¿Quién es el padre del psicoanálisis?",
+      "respuesta": ["freud","sigmund freud"]
+      "pista": None,
+      "exp": 10
+    },
+    "9":{
+      "pregunta": "¿Cuál es la única ciudad que está en dos continentes distintos?",
+      "respuesta": "estambul",
+      "pista": None,
+      "exp": 30
+    },
+    "10":{
+      "pregunta": "¿Quién fue el primer emperador romano?",
+      "respuesta": ["augusto","cesar augusto","césar augusto"],
+      "pista": None,
+      "exp": 30
+    }
+}

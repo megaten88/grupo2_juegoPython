@@ -1,0 +1,62 @@
+{
+    "1":{
+      "pregunta": "Fue un monje y naturalista que es considerado el padre de la genética.",
+      "respuesta": ["gregor mendel","mendel"],
+      "pista": None,
+      "exp": 20
+    },
+    "2":{
+      "pregunta": "¿Cual es el proceso por el cual una célula se divide para formar dos células hijas?",
+      "respuesta": "mitosis",
+      "pista": None,
+      "exp": 20
+    },
+    "3":{
+      "pregunta": "¿Como se le llama la región en un átomo donde están protones y neutrones?",
+      "respuesta": ["nucleo","núcleo","el nucleo","el núcleo"],
+      "pista": None,
+      "exp": 10
+    },
+    "4":{
+      "pregunta": "¿Cual es el nombre de la sustancia que le da a la piel y al cabello su pigmentación?",
+      "respuesta": "melanina",
+      "pista": None,
+      "exp": 30
+    },
+    "5":{
+      "pregunta": "¿Qué estudia la botánica?",
+      "respuesta": ["las plantas","plantas"],
+      "pista": None,
+      "exp": 10
+    },
+    "6":{
+      "pregunta": "¿El electrón lleva carga positiva o negativa?",
+      "respuesta": "negativa",
+      "pista": None,
+      "exp": 10
+    },
+    "7":{
+      "pregunta": "¿300,000 km/s es la velocidad de?",
+      "respuesta": ["la luz","luz"],
+      "pista": None,
+      "exp": 10
+    },
+    "8":{
+      "pregunta": "¿Cuánto es 212 grados Fahrenheit en grados centígrados?",
+      "respuesta": ["100", "100 grados centígrados", "cien grados", "cien"],
+      "pista": None,
+      "exp": 20
+    },
+    "9":{
+      "pregunta": "¿Una medida de pi/4 radianes equivale a cuántos grados?",
+      "respuesta": ["45","45 grados"],
+      "pista": None,
+      "exp": 20
+    },
+    "10":{
+      "pregunta": "De acuerdo a los botánicos, ¿qué es un tomate?",
+      "respuesta": ["fruta","una fruta","es una fruta"],
+      "pista": None,
+      "exp": 20
+    }
+}

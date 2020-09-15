@@ -1,0 +1,62 @@
+{
+    "1":{
+      "pregunta": "¿Qué palabra tiene 5 sílabas y más de 20 letras?",
+      "respuesta": "abecedario",
+      "pista": "En realidad creo que tiene 27 letras.",
+      "exp": 10
+    },
+    "2":{
+      "pregunta": "¿Qué flor tiene en su nombre 5 vocales?",
+      "respuesta": ["orquidea","orquídea"],
+      "pista": "Me parece que termina en la primera vocal.",
+      "exp": 10
+    },
+    "3":{
+      "pregunta": "¿Qué animal en su nombre lleva las 5 vocales?",
+      "respuesta": ["murcielago","murciélago"],
+      "pista": "Me parece que es un mamífero.",
+      "exp": 10
+    },
+    "4":{
+      "pregunta": "Encuentre un solo sinónimo para estas dos palabras: Mineral - Mona",
+      "respuesta": "mica",
+      "pista": "El sinónimo está en femenino.",
+      "exp": 10
+    },
+    "5":{
+      "pregunta": "Ordena las palabras, y luego escribe de respuesta la que no corresponde al grupo: preda - darme - obaelu - línovi",
+      "respuesta": ["violin","violín"],
+      "pista": "Hay algo que en definitiva no pertenece a esa familia.",
+      "exp": 10
+    },
+    "6":{
+      "pregunta": "¿Qué palabra no corresponde al grupo?: diente - niveo - tomboctú - milán - águila",
+      "respuesta": ["aguila","águila"],
+      "pista": "¿te sabes el alfabeto de memoria? Creo que te podría ser muy útil en este momento.",
+      "exp": 10
+    },
+    "7":{
+      "pregunta": "¿Qué palabra de 5 letras se hace más breve al añadirle más?",
+      "respuesta": "breve",
+      "pista": "Lee atentamente la pregunta de nuevo, estoy seguro que la respuesta se esconde ahí.",
+      "exp": 10
+    },
+    "8":{
+      "pregunta": "Perro callejero posee innumerables... .Según la lógica, ¿qué palabra sigue?: pulgas, accesorios, ilusiones, vocaciones",
+      "respuesta": "accesorios",
+      "pista": "Guíate por la lógica de las palabras y no del significado de la oración.",
+      "exp": 30
+    },
+    "9":{
+      "pregunta": "Las siguientes palabras forman una serie lógica: pala - beban - acción - dardo - diente - alifafe ¿Cuál de estas opciones sería la siguiente?: millar, griego, venas, kilos",
+      "respuesta": "griego",
+      "pista": "Leer entre lineas podria llevarnos a la respuesta.",
+      "exp": 30
+    },
+    "10":{
+      "pregunta": "Define en una palabra al que siempre necesita de alguien más. Esa palabra al despreciar su primera sílaba y separarando las sílabas restantes forma tres palabras que expresan, respectivamente, una alhaja, un huesecillo humano y una bebida",
+      "respuesta": "dependiente",
+      "pista": "La clave es encontrar la primera palabra, luego solo vas quitando una silaba y leyendo cada palabra. Sé que puedes hacerlo sin mi.",
+      "exp": 30
+    }
+}
