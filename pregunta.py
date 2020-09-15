@@ -19,7 +19,7 @@ def fetch_data(category):
     INPUT: <type, str>: La categoria de juego.
     OUTPUT: <type, dict>: Datos asociados a la categoria (preguntas,respuestas,pistas,exp).
     """
-    with open ('preguntas/' + category + '.json') as file:
+    with open ('archivos_json/' + category + '.json') as file:
         category_data = json.load(file)
         category_data = dict(random.sample(category_data.items(),2)) #para dar aleatoriedad
         return(category_data)
