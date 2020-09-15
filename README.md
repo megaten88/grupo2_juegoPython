@@ -11,3 +11,13 @@ Bessy Padilla
 Mayra Salazar
 
 Pamela Salazar
+
+
+
+Modulos Utilizados:
+* ftfy
+* textwrap
+* sys
+* time
+* json
+* random
