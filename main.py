@@ -216,7 +216,48 @@ def game():
     questions = []
     # FIN DEL TERCER PLANETA
 
+#AQUÍ COMIENZA EL CUARTO PLANETA
+    planet,villain = createPlanet("Planeta Cultura General", "cultura", "Soldish")
+    print(textwrap.dedent(f"""\
+        *************LLEGANDO A {planet.name}
+        - Core: el ser un explorador me ha enseñado tantas cosas, 
+        - Core: he aprendido lo importante que es la función de todos en el universo, ningún conocimiento vale menos que el de otros, y que todos tenemos algo que entregar.
+        - Core: Yo vengo de un planeta llamado foody.  Hablamos de los mejores cocineros del universo, la mayor diversidad en alimentos que este pueda entregar.
+        - Core: pero yo jamás lo entendí o jamás pertenecí ahí. No lo se… 
+        - Core: Desde muy joven me apasione por la exploración espacial es lo único que conocía y ahora estoy contigo en esta misión. 
+        - Core: La mas importante de mi vida, conozco el espacio, mi misión y a mi amigo que acompaña. 
 
+        - {villain.name}: impresionante, lograron romper los sellos
+        - {villain.name}: Pero eso no basta para obtener mi objeto especial, así que, llego la hora de la prueba final,
+        - {villain.name}: ¿que tanto saben acerca de todo lo que se puede saber? 
+
+            """))
+    questions =  createQuestions('cultura')
+    for question in questions:
+        correct = None
+        tries=0
+        while(correct is None and tries<= protagonist.tryNumber):
+            correct = answer_check(question,protagonist)
+            if(correct is None ):
+                tries+=1
+            if(tries == protagonist.tryNumber-1):
+                 print(textwrap.dedent(f"""\
+                    - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
+                """))
+            if(tries > protagonist.tryNumber):
+                print(textwrap.dedent(f"""\
+                    - Core: SE TERMINÓ EL JUEGO :(
+                """))
+                return
+    print(textwrap.dedent(f"""\
+        - {villain.name}: Me has vencido, {protagonist.name}.
+
+        RESUMEN DEL PROTAGONISTA:
+        {protagonist}
+
+            """))
+    questions = []
+    # FIN DEL CUARTO PLANETA
 
 
 
