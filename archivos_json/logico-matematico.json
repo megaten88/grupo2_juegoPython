@@ -2,61 +2,61 @@
     "1":{
       "pregunta": "Si 50 es el 100%, ¿cuánto es el 90%?",
       "respuesta": "45",
-      "pista": None,
+      "pista": "Divide 50/100 y el resultado  se multiplica por 90.",
       "exp": 10
     },
     "2":{
       "pregunta": "¿Cuál de las siguientes palabras no encaja con las demás? Opciones: leon, puma, tigre, leopardo, lobo, jaguar",
       "respuesta": "lobo",
-      "pista": None,
+      "pista": "Nótese que se muestran nombres de felinos y en la lista hay un canino.",
       "exp": 10
     },
     "3":{
       "pregunta": "SACO es a ASCO como 7683 es a...",
       "respuesta": "6783",
-      "pista": None,
+      "pista": "Invierte los dos primeros números así como sucedió con las letras.",
       "exp": 10
     },
     "4":{
       "pregunta": "Tenemos tres cajas de igual tamaño. Dentro de cada una de las cajas hay otras dos más pequeñas, y en cada una de estas otras cuatro aún menores. ¿Cuántas cajas hay en total?",
       "respuesta": "24",
-      "pista": None,
+      "pista": "El resultado es la multiplicación de 3 números, note en el enunciado cuales son.",
       "exp": 10
     },
     "5":{
       "pregunta": "¿Cuál es el siguiente término en la siguiente secuencia?: 2Z3, 4Y5, 6X7",
       "respuesta": ["8W9","8w9"],
-      "pista": None,
+      "pista": "Trate de buscar patrones.",
       "exp": 10
     },
     "6":{
       "pregunta": "¿Qué pasó ayer en París de 6 a 7?",
       "respuesta": ["una hora","hora","la hora"],
-      "pista": None,
+      "pista": "Lee detenidamente la pregunta. Estoy seguro que verás el truco.",
       "exp": 10
     },
     "7":{
       "pregunta": "Estás corriendo en una carrera y adelantas a la persona que está en segundo lugar. ¿En qué posición pasas a estar?",
       "respuesta": ["segunda","segunda posicion", "segundo lugar", "la segunda", "segunda posición"],
-      "pista": None,
+      "pista": "¿Que puesto adelanta? Tome en cuenta eso.",
       "exp": 10
     },
     "8":{
       "pregunta": "En una fiesta de 50 invitados, todos se dan la mano exactamente una vez con todos los demás. ¿Cuántos apretones de mano se dan en la fiesta?",
       "respuesta": "1225",
-      "pista": None,
+      "pista": "Cada persona participa en 49 saludos (uno no se saluda a sí mismo). Pero, ¿cuántos de estos saludos son diferentes?",
       "exp": 40
     },
     "9":{
       "pregunta": "Tomás compra bolígrafos a $4 cada uno y los vende a $6 cada uno. ¿Cuál es el porcentaje de sus ganancias?",
       "respuesta": ["50","50%"],
-      "pista": None,
+      "pista": "Debes identificar cual es la ganancia obtenida y la inversión realizada.",
       "exp": 20
     },
     "10":{
       "pregunta": "Encuentra los operadores para conseguir que el resultado de la operación sea correcto: 10 () 3 () 9 = 39. Opciones: +,-,*,/",
       "respuesta": ["*+","* +"],
-      "pista": None,
+      "pista": "Proceder por prueba y error.",
       "exp": 10
     }
 }
