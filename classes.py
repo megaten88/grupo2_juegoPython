@@ -1,3 +1,5 @@
+from pregunta import Question
+
 class Character:
    def __init__(self, name, level):
        self.name = name
@@ -7,7 +9,7 @@ class Character:
 
 
 class Protagonist(Character):
-    def __init__(self, name, level, exp=1, nextLevel=80,tryNumber=3):
+    def __init__(self, name, level, exp=1, nextLevel=20,tryNumber=3):
         super().__init__(name,level)
         self.exp = exp
         self.nextLevel = nextLevel
@@ -22,41 +24,19 @@ class Protagonist(Character):
             self.nextLevel+= self.nextLevel*2
 
 
-
 class Villain(Character):
-    pass
-
+    def __init__(self, name, level,planet):
+        super().__init__(name,level)
+        self.planet = planet
+    def __str__(self):
+        return f"Soy {self.name},guardian del planeta {self.planet}"
+    
+    
 class Planet:
     def __init__(self, name, category, villain):
         self.name = name
         self.category = category
-        self.villain = villain
+        self.villain = Villain(villain,20,category)
     def __str__(self):
-        return "Nombre:{}\n Categoria:{}".format(self.name, self.category)
-
-categorias = ["Cultura General", "Música", "Lenguajes"] 
-
-def lectura():
-    nueva_pregunta = Question(0,"Como estás?", 20)
-    pass
-
-class Question:
-    def __init__(self, numCategory, question, exp):
-        self.category = numCategory
-        self.question = question
-        self.exp = exp
-    
-
-question1 = Question(0,"¿Donde quedá Japón?",20)
-
-preguntas = [question1]
-
-
-personaje = Protagonist("Mayra",1,1)
-print(personaje)
-print()
-
-personaje + question1.exp
-
-print(personaje)
+        return "Planeta:{}\n Categoría:{} \n Guardian: {}".format(self.name, self.category,self.villain)
 

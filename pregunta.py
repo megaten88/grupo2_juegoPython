@@ -1,7 +1,7 @@
 import json
 import random
 
-categories = ['lenguaje','logica','ciencia','cultura','logica-matematica']
+# categories = ['lenguaje','logica','ciencia','cultura','logica-matematica']
 questions = []
 
 class Question:
@@ -22,7 +22,7 @@ def fetch_data(category):
     """
     with open ('preguntas/' + category + '.json') as file:
         category_data = json.load(file)
-        #category_data = dict(random.sample(category_data.items(),2)) #para dar aleatoriedad
+        category_data = dict(random.sample(category_data.items(),2)) #para dar aleatoriedad
         return(category_data)
 
 # x = fetch_data('cultura')
@@ -39,9 +39,10 @@ def createQuestions(category):
         exp = category_data[key]['exp']
         newQuestion = Question(question,answer,hint,exp)
         questions.append(newQuestion)
-    pass
 
-createQuestions('cultura')
+def clearQuestions():
+    global questions
+    questions = []
 
 def player_input(question):
     """
@@ -53,27 +54,23 @@ def player_input(question):
     response = input().lower().strip()
     return(response)
 
+
 def answer_check(question_data, protagonist):
     """
     Funcion que compara la respuesta ingresada por el jugador y la compara con la solución a la misma.
     INPUT: <type, dict>: Toda la data asociada a una preguntas
     OUTPUT: Por definirse
     """
-    answer = question_data["respuesta"]
-    response = player_input(question_data["problema"])
+    answer = question_data.answer
+    response = player_input(question_data)
     if response == answer:
         print("Has acertado!")
-        protagonist + question_data["exp"]
+        protagonist + question_data.exp
+        return True
+
     else:
         print("No te rindas! Intenta de nuevo!")
+        return None
 
-createQuestions('cultura')
-createQuestions('lenguaje')
-
-# player_input(questions[0])
-
-# createQuestions('ciencia')
-# createQuestions('logica')
-# createQuestions('logica-matematica')
 
 

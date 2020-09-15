@@ -3,18 +3,18 @@
       "pregunta": "¿De que color era el caballo blanco de Morazan?",
       "respuesta": "blanco",
       "pista": "En serio?",
-      "exp": 10
+      "exp": 40
     },
     "2":{
       "pregunta": "¿Es arenera un palindromo?",
       "respuesta": "si",
       "pista": "Un palindromo es una palabra que se lee igual en un sentido que en otro.",
-      "exp": 10
+      "exp": 40
     },
     "3":{
       "pregunta": "¿Cuantas silabas hay en la palabra mosquito?",
       "respuesta": "3",
       "pista": "En serio?",
-      "exp": 10
+      "exp": 40
     }
 }
