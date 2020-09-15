@@ -5,7 +5,7 @@ import sys #nuevo
 import time #nuevo
 
 #Formato de texto
-wrapper = textwrap.TextWrapper(width = 80)
+wrapper = textwrap.TextWrapper(width = 80,replace_whitespace=False)
 def text_format(message):
             wrapped_text = wrapper.fill(text=message)
     #for index in range(len(wrapped_text)):
@@ -13,7 +13,7 @@ def text_format(message):
             for character in wrapped_text: #nuevo
                 sys.stdout.write(character) #nuevo
                 sys.stdout.flush() #nuevo
-                time.sleep(0.06) #nuevo
+                time.sleep(0.03) #nuevo
             print("")
 
 
@@ -91,7 +91,7 @@ def game():
     name = input("Ingresa el nombre del personaje: ")
     protagonist = Protagonist(name,1,1)
 
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""
         {protagonist.name} ¡perfecto! Mucho gusto, mi nombre es Core y nadie conoce este lado del universo mejor que yo, o al menos eso es lo que dicen jeje.
         - Core: Ohh amigo, te ves algo perdido…
         - Core: Hmmmmmmmmm,, ¿que te parece si te unes a mi mas reciente y emocionante misión? Te explicare mas en el camino, ¡vamos!
@@ -101,19 +101,19 @@ def game():
             """))
     playerChoice = input("**¿Viajar junto a Core?\n [Sí(S)/No(N)]: ").lower().strip()
     if(playerChoice[0]=="n"):
-        print("Core: Está bien, entiendo, espero verte pronto amigo.")
+        text_format("Core: Está bien, entiendo, espero verte pronto amigo.")
         return
-    print(textwrap.dedent(f"""\
-        - Core: Gracias por acompañarme en esta aventura, te explico.
-        - Core: Nuestra misión es recolectar los 5 objetos especiales cada uno se encuentra resguardado por un guardián de planeta. Y para llegar a el debemos romper los sellos que los protegen ¿de que manera?
-        - Core: Pues respondiendo de forma correcta una serie de preguntas que nos harán debemos tener mucho cuidado pues si fallamos mas de 3 veces seremos descubiertos y exiliados del planeta.
-        - Core: Yo confió plenamente en tus habilidades, pero si te sientes en demasiados problemas puedo ayudarte recuerda que somos compañeros, ante todo.
-        - Core: Cada planeta nos dará por su nombre la pista de que tipo de trivia o acertijo podremos encontrar en el, así que adelante y comencemos con el planeta del Lenguaje…
+    text_format(textwrap.dedent(f"""\
+        - Core: Gracias por acompañarme en esta aventura, te explico.\n
+        - Core: Nuestra misión es recolectar los 5 objetos especiales cada uno se encuentra resguardado por un guardián de planeta. Y para llegar a el debemos romper los sellos que los protegen ¿de que manera?\n
+        - Core: Pues respondiendo de forma correcta una serie de preguntas que nos harán debemos tener mucho cuidado pues si fallamos mas de 3 veces seremos descubiertos y exiliados del planeta.\n
+        - Core: Yo confió plenamente en tus habilidades, pero si te sientes en demasiados problemas puedo ayudarte recuerda que somos compañeros, ante todo.\n
+        - Core: Cada planeta nos dará por su nombre la pista de que tipo de trivia o acertijo podremos encontrar en el, así que adelante y comencemos con el planeta del Lenguaje…\n
             """))
 
  # Aquí empieza la dinámica para todos los planetas
     planet,villain = createPlanet("Planeta Lenguaje", "lenguaje", "Sir.Lovial")
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         *************LLEGANDO A {planet.name}
         - {villain.name}: Un terrícola y un bandido en el planeta del lenguaje, desde que entraron sabia que venían a por mi objeto.
         - {villain.name}: al haber derrocado nuestros sellos han demostrado astucia, y valor.
@@ -128,15 +128,15 @@ def game():
             if(correct is None ):
                 tries+=1
             if(tries == protagonist.tryNumber-1):
-                 print(textwrap.dedent(f"""\
+                 text_format(textwrap.dedent(f"""\
                     - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
                 """))
             if(tries > protagonist.tryNumber):
-                print(textwrap.dedent(f"""\
+                text_format(textwrap.dedent(f"""\
                     - Core: SE TERMINÓ EL JUEGO :(
                 """))
                 return
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         - {villain.name}: Me has vencido, {protagonist.name}.
 
         RESUMEN DEL PROTAGONISTA:
@@ -149,7 +149,7 @@ def game():
      # Aquí empieza el segundo planeta
 
     planet,villain = createPlanet("Planeta Ingenio", "ingenio", "Sora")
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         *************LLEGANDO A {planet.name}
         - Arita: Veo que lo has logrado Core, encontrar al terrícola no era una tarea fácil.
         - Arita: Y mucho menos al indicado, tu fascinación por la exploración y el espacio; te ha traído muchos beneficios…
@@ -172,15 +172,15 @@ def game():
             if(correct is None ):
                 tries+=1
             if(tries == protagonist.tryNumber-1):
-                 print(textwrap.dedent(f"""\
+                 text_format(textwrap.dedent(f"""\
                     - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
                 """))
             if(tries > protagonist.tryNumber):
-                print(textwrap.dedent(f"""\
+                text_format(textwrap.dedent(f"""\
                     - Core: SE TERMINÓ EL JUEGO :(
                 """))
                 return
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         - {villain.name}: Me has vencido, {protagonist.name}.
 
         RESUMEN DEL PROTAGONISTA:
@@ -192,7 +192,7 @@ def game():
 
     #AQUÍ COMIENZA EL TERCER PLANETA
     planet,villain = createPlanet("Planeta Ciencia", "ciencia", "Dernas")
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         *************LLEGANDO A {planet.name}
         - Core: ¡Wow! Mira {protagonist.name}, este es mi planeta favorito, donde ser un explorador no es...
         - Core: sinónimo de bandido, dudar es siempre la primera opción y equivocarse es solo el motivo para volverlo a intentar.
@@ -213,15 +213,15 @@ def game():
             if(correct is None ):
                 tries+=1
             if(tries == protagonist.tryNumber-1):
-                 print(textwrap.dedent(f"""\
+                 text_format(textwrap.dedent(f"""\
                     - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
                 """))
             if(tries > protagonist.tryNumber):
-                print(textwrap.dedent(f"""\
+                text_format(textwrap.dedent(f"""\
                     - Core: SE TERMINÓ EL JUEGO :(
                 """))
                 return
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         - {villain.name}: Me has vencido, {protagonist.name}.
 
         RESUMEN DEL PROTAGONISTA:
@@ -233,7 +233,7 @@ def game():
 
 #AQUÍ COMIENZA EL CUARTO PLANETA
     planet,villain = createPlanet("Planeta Cultura General", "cultura", "Soldish")
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         *************LLEGANDO A {planet.name}
         - Core: el ser un explorador me ha enseñado tantas cosas, 
         - Core: he aprendido lo importante que es la función de todos en el universo, ningún conocimiento vale menos que el de otros, y que todos tenemos algo que entregar.
@@ -256,15 +256,15 @@ def game():
             if(correct is None ):
                 tries+=1
             if(tries == protagonist.tryNumber-1):
-                 print(textwrap.dedent(f"""\
+                 text_format(textwrap.dedent(f"""\
                     - Core: Te ayudaré un poquito! La pista de esta pregunta es: {question.hint}
                 """))
             if(tries > protagonist.tryNumber):
-                print(textwrap.dedent(f"""\
+                text_format(textwrap.dedent(f"""\
                     - Core: SE TERMINÓ EL JUEGO :(
                 """))
                 return
-    print(textwrap.dedent(f"""\
+    text_format(textwrap.dedent(f"""\
         - {villain.name}: Me has vencido, {protagonist.name}.
 
         RESUMEN DEL PROTAGONISTA:
